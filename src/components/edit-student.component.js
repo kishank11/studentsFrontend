@@ -23,7 +23,7 @@ export default class EditStudent extends Component {
   componentDidMount() {
     axios
       .get(
-        "https://mernkk1.herokuapp.com/edit-student/" +
+        "https://mernkk1.herokuapp.com/students/edit-student/" +
           this.props.match.params.id
       )
       .then((res) => {
